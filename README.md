@@ -205,6 +205,7 @@ def send_sms(phone, message):
 ## ================================
 
 <p>scripts/send_whatsapp.py</p>
+
 ```Python
 import requests
 
@@ -233,6 +234,7 @@ def send_whatsapp(number, message):
 ## =============================
 
 <p>scripts/send_email.py</p>
+
 ```Python
 import smtplib
 from email.mime.text import MIMEText
@@ -258,6 +260,7 @@ def send_email(to, subject, body):
 ## =============================
 
 <p>scripts/automate.py</p>
+
 ```Python
 import gspread
 from google.oauth2.service_account import Credentials
@@ -308,6 +311,7 @@ if __name__ == "__main__":
 ## ===================================
 
 <p>local_ai/run_local_llama.py</p>
+
 ```Python
 import sys
 from ollama import Client
@@ -326,10 +330,12 @@ print(resp['message']['content'])
 ## =============================
 
 <p>Linux</p>
+
 ```nginx
 crontab -e
 ```
 <p>Add:</p>
+
 ```ruby
 0 9 * * * /usr/bin/python3 /path/scripts/automate.py
 ```
@@ -375,17 +381,20 @@ crontab -e
     * Download it
 
 * Rename it to:
+
 ```pgsql
 creds.json
 ```
 
 * Put it here:
+
 ```pgsql
 subscription-notifier/config/creds.json
 ```
 ---
 
 ### ✔ Example creds.json (Structure)
+
 ```json
 {
   "type": "service_account",
@@ -425,6 +434,7 @@ Just download it from Google Cloud.</p>
 * 	Save only the token in this file:
 
 ## **✔ Example whatsapp_token.txt**
+
 ```
 EAAI29VbF89OABAqZC2sZAa8ZAXFZB0BOb8I6...
 ```
@@ -445,6 +455,7 @@ EAAI29VbF89OABAqZC2sZAa8ZAXFZB0BOb8I6...
 <p>Copy this key.</p>
 
 ## **✔ Example msg91_auth.txt**
+
 ```
 378819AqvHns8M9NvBdjE2a041p
 ```
@@ -462,6 +473,7 @@ EAAI29VbF89OABAqZC2sZAa8ZAXFZB0BOb8I6...
 -	Click Create new secret key
 
 ## **✔ Example openai_key.txt**
+
 ```
 sk-4KZGrewaZlE3PiSy0EwHA28Fjh7fZlnVpukBPQdX
 ```
