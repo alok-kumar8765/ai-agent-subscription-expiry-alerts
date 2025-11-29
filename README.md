@@ -1,6 +1,6 @@
-# ====================================================================================
+# =========================
 # 🔥 AI Subscription Expiry Reminder System (Google Sheets + MSG91 + WhatsApp + Email)
-# ====================================================================================
+# =========================
 
 <p>
 AI-powered Subscription Expiry Reminder System with Google Sheets sync, Google Calendar event creation, SMS alerts via MSG91, WhatsApp notifications using WhatsApp Cloud API, and email alerts via Gmail API.
@@ -23,11 +23,11 @@ Fully automated using Python, OpenAI (with fallback to local Llama3), and cron j
 
 # 🚀 FULL END-TO-END SOLUTION: Subscription Expiry Notification System
 
-## =============================
-## 1️⃣ SYSTEM FOLDER STRUCTURE
-## =============================
+### =============================
+### 1️⃣ SYSTEM FOLDER STRUCTURE
+### =============================
 
-```graphql
+``` graphql
 subscription-notifier/
 │
 ├── config/
@@ -56,12 +56,13 @@ subscription-notifier/
 ```
 ---
 
-## ======================================
-## 2️⃣ GOOGLE SHEET TEMPLATE (MASTER DATA)
-## ======================================
+### ======================================
+### 2️⃣ GOOGLE SHEET TEMPLATE (MASTER DATA)
+### ======================================
 
 <p>Create a Google Sheet with the following columns: </p>
-```vbnet
+
+```
 A: User Name
 B: Email
 C: Phone
@@ -75,12 +76,13 @@ I: Status (AUTO: Active/Expired)
 
 ---
 
-## =============================================
-## 3️⃣ SYNC EXCEL → GOOGLE SHEETS (Python Script)
-## =============================================
+### =============================================
+### 3️⃣ SYNC EXCEL → GOOGLE SHEETS (Python Script)
+### =============================================
 
 <p>scripts/sync_excel_to_sheets.py</p>
-```Python
+
+``` Python
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
@@ -103,6 +105,7 @@ def sync_excel_to_google_sheet():
 
 if __name__ == "__main__":
     sync_excel_to_google_sheet()
+	
 ```
 
 ---
